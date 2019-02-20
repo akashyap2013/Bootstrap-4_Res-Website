@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee|Hind|PT+Sans|Pacifico|Poppins|Lobster");
+
+:root {
+  --tomato-color: #ff433d;
+  --yellow-color: #ffb347;
+  --megenta-color: rgba(168, 2, 168, 0.897);
+  --lime-color: rgba(8, 248, 80, 0.932);
+  --light-orange: #ff6215;
+  --poppins: "Poppins", sans-serif;
+  --bungee: "Bungee", cursive;
+  --lobster: "Lobster", cursive;
+  --pacifico: "Pacifico", cursive;
+}
+/*              Homepage Design             */
+
+.navbar {
+  background-color: #002f49a2;
+}
+.navbar-brand {
+  padding-left: 30px;
+  font-family: var(--lobster);
+  font-size: 2rem;
+  color: var(--yellow-color);
+}
+
+.nav-item {
+  padding: 0em 1.3em;
+}
+.nav-link {
+  font-family: var(--poppins);
+  color: whitesmoke;
+  font-size: 1.1em;
+}
+.nav-link:hover {
+  color: var(--light-orange);
+}
+
+.heading .h1 {
+  font-family: var(--bungee);
+  font-size: 7vmin;
+  padding-top: 28vmin;
+  color: var(--yellow-color);
+}
+
+.heading .h1 + span {
+  color: var(--yellow-color);
+}
+
+.heading .p {
+  padding: 0em 13vmin;
+  color: rgb(70, 65, 65);
+  font-size: 3.5vmin;
+  font-family: var(--pacifico);
+}
+
+.heading > .btn1,
+.btn2 {
+  padding: 3vmin 7vmin;
+  margin: 2vmin 2.5vmin;
+  background: #002f49;
+  font-size: 2.5vmin;
+  font-family: var(--poppins);
+  color: white;
+}
+
+.heading > .btn2 {
+  background-color: var(--tomato-color);
+  border: 0px;
+  color: white;
+}
+.heading > .btn1:hover,
+.btn2:hover {
+  border: 1px solid tomato;
+}
+
+.heading {
+  margin-bottom: 45vmin;
+}
+
+#myVideo {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: -999;
+}
+/*/              Homepage Design             /*/
+
+/*                     Section 2                          */
+
+.section_2 h1 {
+  font-family: var(--bungee);
+  font-size: 6vmin;
+}
+
+.section_2 .p {
+  padding: 1.4vmin 13vmin;
+  font-size: 2.6vmin;
+  font-family: var(--poppins);
+}
+
+.section_2 .progress-one,
+.progress-two,
+.progress-three {
+  padding: 1vmin 12vmin;
+  position: relative;
+}
+
+.section_2 .caption {
+  position: relative;
+  top: 2.2em;
+  left: 48%;
+  margin-bottom: 3em;
+  font-size: 1em;
+  border-radius: 0.2em;
+  width: 60px;
+  background-color: var(--tomato-color);
+  color: white;
+}
+.section_2 .caption::after {
+  content: " ";
+  position: absolute;
+  top: 1.5em;
+  left: 2em;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+  border-top: 10px solid var(--tomato-color);
+}
+
+.section_2 .progress-curcle::before {
+  content: " ";
+  position: absolute;
+  border: 6px solid lightblue;
+  border-radius: 1em;
+  left: 56%;
+}
+
+.section_2 .progress-two .caption {
+  left: 73%;
+}
+
+.section_2 .progress-two .progress-curcle::before {
+  left: 74%;
+}
+
+.section_2 .progress-three .caption {
+  left: 75%;
+}
+
+.section_2 .progress-three .progress-curcle::before {
+  left: 76%;
+}
+
+/*          Progress bar Coloring                 */
+
+.section_2 .progress-one .progress-bar {
+  background: var(--tomato-color);
+}
+
+.section_2 .progress-two .progress-bar {
+  background: var(--lime-color);
+}
+
+.section_2 .progress-three .progress-bar {
+  background: var(--megenta-color);
+}
+
+.section_2 .pro-details {
+  color: var(--tomato-color);
+  font-size: 1.2rem;
+  padding: 4vmin 0;
+}
+
+.section_2 .progress-two .pro-details {
+  color: var(--lime-color);
+}
+
+.section_2 .progress-three .pro-details {
+  color: var(--megenta-color);
+}
+
+.section_2 div:last-child {
+  padding-bottom: 5vmin;
+}
+
+/*/                   Section 2                   /*/
+
+/*                      Section 3                         */
+
+.section_3 {
+  background: #f7ff00; /* fallback for old browsers */
+  background: linear-gradient(to left, #db36a4, #f7ff00);
+  margin-bottom: 4vmin;
+}
+
+.section_3 .projects h1 {
+  font-family: var(--bungee);
+  font-size: 6vmin;
+  color: whitesmoke;
+  padding-top: 7vmin;
+}
+
+.section_3 .projects p {
+  font-family: var(--poppins);
+  padding: 3vmin 0;
+  color: rgb(232, 242, 243);
+  font-size: 3vmin;
+}
+
+.section_3 .images {
+  height: 60vh;
+  background-color: red;
+}
+
+.section_3 .images .flex-fill {
+  background: rebeccapurple;
+  height: 60vh;
+  overflow: hidden;
+}
+.section_3 .images .flex-fill img {
+  width: 210%;
+  transition: 0.4s ease-in;
+}
+
+.section_3 .images .flex-fill img:hover {
+  width: 180%;
+}
+
+/*                        Section 4                         */
+
+.section_4 .services h1 {
+  font-family: var(--bungee);
+  font-size: 2em;
+  padding: 2em 0 0.6em 0;
+}
+.section_4 .services > p {
+  font-size: 1em;
+  font-family: var(--poppins);
+}
+.section_4 .services .cards {
+  padding: 3em;
+  padding-top: 0em;
+}
+.section_4 .services .cards i {
+  padding: 1em;
+}
+.section_4 .services .cards h3 {
+  font-family: var(--bungee);
+}
+.section_4 .services .cards > p {
+  padding: 0.4em;
+}
+
+.section_4 .services .cards:first-child i,
+.cards:first-child h3 {
+  color: var(--tomato-color);
+}
+.section_4 .services .cards:nth-child(2) i,
+.cards:nth-child(2) h3 {
+  color: var(--lime-color);
+}
+.section_4 .services .cards:nth-child(3) i,
+.cards:nth-child(3) h3 {
+  color: var(--megenta-color);
+}
+.section_4 {
+  margin-bottom: 5em;
+}
+
+/*                      Section 5                 */
+.section_5 {
+  background: #833ab4;
+  background: -webkit-linear-gradient(to left, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to left, #fcb045, #fd1d1d, #833ab4);
+}
+
+.section_5 div h1 {
+  padding: 8vmin 0em;
+}
+
+.section_5 div p {
+  font-size: 3vmin;
+  padding: 0 2vmin;
+}
+
+.section_5 .Team h1,
+.section_5 .Team p {
+  color: whitesmoke;
+  font-family: var(--poppins);
+}
+
+.section_5 .Team .member {
+  margin-top: 10vmin;
+}
+.section_5 .Team .member:nth-child(1) img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.section_5 .Team .member:nth-child(2) {
+  margin-left: 6vmin;
+}
+.section_5 .Team .member:nth-child(2) img {
+  border-radius: 50%;
+}
+.section_5 .Team .member:nth-child(3) {
+  margin-left: 27vmin;
+}
+.section_5 .Team .member:nth-child(3) img {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.section_5 .Team .member .details {
+  padding: 1vmin;
+}
+.section_5 .Team .member .details h4 {
+  color: whitesmoke;
+}
+.section_5 .Team .member .details > * {
+  color: lightblue;
+  font-family: var(--poppins);
+}
+
+.Team {
+  padding-bottom: 10vmin;
+}
+
+/*                        Section 7                       */
+
+.section_6 {
+  padding: 16vmin 2vmin;
+}
+
+.section_6 .footer {
+  padding: 0 10vmin;
+}
+.section_6 .footer label {
+  font-size: 1.8em;
+  color: whitesmoke;
+}
+
+.section_6 .footer ul li {
+  color: #d3d0cb;
+  font-size: 1em;
+}
+
+.copyrights,
+.copyrights p {
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #d3d0cb;
+  font-size: 1em;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  video {
+    display: none;
+  }
+  .section_1 {
+    background: url("Stock/Background-4959.jpeg");
+    background-size: cover;
+  }
+  .section_1 .p {
+    color: #e5e5e5;
+  }
+  .section_2 {
+    margin-top: 5vmin;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .services {
+    margin-top: 250vmin;
+  }
+  .section_5 .Team .member:nth-child(3) {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .section_4 .services {
+    margin-top: 330vmin;
+  }
+}
